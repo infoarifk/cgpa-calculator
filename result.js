@@ -83,14 +83,4 @@ const finalResult = (totalPoint/totalCredit).toFixed(2);
 
 console.log(finalResult);
 
-
-
-
-
-
-
-    
-    
- 
-
 }
