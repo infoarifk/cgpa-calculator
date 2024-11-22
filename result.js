@@ -11,12 +11,13 @@ function submit(){
 
     for(let i=0; i<credit.length; i++){
 
-       if(credit[i].value=="" || gradeSelect[i].value==""){
+       if(credit[i].value=="" || gradeSelect[i].value=="" || isNaN(Number(credit[i].value))==true){
         alert("Your input is not correct");
         break;
       
        }
        else{
+
         creditArray.push(Number(credit[i].value));
         gradeArray.push(gradeSelect[i].value);
        }
@@ -86,8 +87,9 @@ const finalResult = (totalPoint/totalCredit).toFixed(2);
 
 const showResult=document.getElementById("final-result");
 
-showResult.innerText = finalResult;
-
+if(isNaN(finalResult)==false){
+    showResult.innerText = finalResult;
+}
 
 
 }

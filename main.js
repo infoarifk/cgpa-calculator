@@ -9,7 +9,7 @@ newDiv.className = "input-area";
 
 
 newDiv.innerHTML = `
-<input type="text" name="" id="" placeholder="Course Name (optional)">
+<input type="text" class="course-name" placeholder="Course Name (optional)">
             <div class="mobile">
             <input type="text" class="credit" placeholder="Credit">
 
@@ -43,6 +43,12 @@ function removeCourse(){
     parentChild.removeChild(lastChild);
     add-=1;
 
-    } 
+    }
+    if(add==0){
+       document.getElementsByClassName("credit")[0].value='';
+       document.getElementsByClassName("course-name")[0].value='';
+       document.getElementsByClassName('grade')[0].value=""; 
+       
+    }
 
 }

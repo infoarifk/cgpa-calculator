@@ -1,10 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(255, 245, 238);
 }
 
 h1{
   text-align: center;
+  margin-top: 30px;
 }
 
 #main-input{
@@ -37,11 +39,15 @@ margin-bottom: 20px;
 
 #result-area{
     padding: 10px;
-    max-width: 600px; 
+    max-width: 580px; 
     margin: 0 auto; 
 }
 
 @media only screen and (max-width: 600px) {
+
+h1{
+    font-size: x-large;
+}
 
 .input-area{
     flex-direction: column;
