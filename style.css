@@ -20,6 +20,9 @@ margin: 0 auto;
 input,select{ 
     padding: 4px;   
 }
+.course-name{
+    background-color: rgb(255, 224, 224);
+}
 
 
 
