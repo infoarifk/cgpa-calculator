@@ -48,6 +48,8 @@ function removeCourse(){
        document.getElementsByClassName("credit")[0].value='';
        document.getElementsByClassName("course-name")[0].value='';
        document.getElementsByClassName('grade')[0].value=""; 
+       document.getElementById("final-result").innerHTML="0.00";
+  
        
     }
 
