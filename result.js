@@ -81,6 +81,13 @@ function submit(){
 
 const finalResult = (totalPoint/totalCredit).toFixed(2);
 
-console.log(finalResult);
+
+//show result:
+
+const showResult=document.getElementById("final-result");
+
+showResult.innerText = finalResult;
+
+
 
 }

@@ -9,7 +9,8 @@ newDiv.className = "input-area";
 
 
 newDiv.innerHTML = `
-<input type="text" name="" id="" placeholder="Course Name">
+<input type="text" name="" id="" placeholder="Course Name (optional)">
+            <div class="mobile">
             <input type="text" class="credit" placeholder="Credit">
 
             <select class="grade">
@@ -24,6 +25,7 @@ newDiv.innerHTML = `
                 <option value="D">D</option>
                 <option value="F">F</option>
             </select>
+            </div>
 `;
 
 parentChild.appendChild(newDiv);
